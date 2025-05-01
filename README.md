@@ -17,4 +17,3 @@ C++ is valuable for data scientists due to its speed and efficiency, which make 
 
 ## License
 This repository is licensed under the [MIT License](LICENSE) 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
