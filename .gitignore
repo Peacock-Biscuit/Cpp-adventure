@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+# macOS hidden metadata
+.DS_Store
+._.DS_Store
+**/.DS_Store
+**/._.DS_Store

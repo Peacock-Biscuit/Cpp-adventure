@@ -6,6 +6,52 @@ C++ is valuable for data scientists due to its speed and efficiency, which make 
 
 ## Getting Started
 
+In order to solve users' dependency complexity and just test how programs work, a dockerfile is provided to build an image to avoid dependency problems. In case you still do not install docker or docker destop, the following instructions are to install preliminary enviornment in your machines.
+
+### Installation
+
+Docker is available to be downloaded on Homebrew.
+
+```
+brew install docker
+```
+
+Colima is available on Homebrew, MacPorts, and Nix.
+
+```
+# Homebrew
+brew install colima
+
+# MacPorts
+sudo port install colima
+
+# Nix
+nix-env -iA nixpkgs.colima
+```
+
+After Colima is installed, there is a step is to build an image based on an existing dockerfile on Colima.
+
+```
+colima start
+
+docker build -t cpp-adventure .
+```
+
+After an image is built, you could write a command to see a list of your images.
+
+```
+docker images
+```
+
+To sync with your local directory, a step to run a docker is provided.
+
+```
+docker run -it --mount type=bind,src=`pwd`,dst=/app cpp-adventure
+```
+
+You could see mounted files under `./Cpp-adventure` show up under `./app` on the docker enviornment.
+
+### How to Run C++ Programs
 
 ## Contents
 
